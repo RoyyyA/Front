@@ -1,0 +1,117 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>week2_homework</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+      font-size: larger;
+      font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    }
+    ul {
+      padding: 0;
+    }
+    li {
+      padding: 10px 0;
+      border-radius: 10px;
+      transition: all 200ms ease-in-out;
+      max-width: 400px;
+      margin: 0 auto;
+      list-style: none;
+      padding: 30px 0;
+      display: block;
+    }
+    li:hover {
+      background-color: #f5c7f7;
+    }
+    h1 {
+      text-align: center;
+    }
+    button {
+      color: white;
+      font-size: large;
+      background-color: #4e4188;
+      display: block;
+      padding: 10px 20px 10px 20px;
+      margin: 0 auto;
+      transition: all 200ms ease-in-out;
+      border: 1px solid #a393eb;
+      border-radius: 40px;
+      box-shadow: 7px 5px 5px #a393eb;
+      font-family: fantasy;
+    }
+    button:hover {
+      color: #4e4188;
+      background-color: #f5c7f7;
+      cursor: pointer;
+    }
+
+    .title {
+      color: #27296d;
+      text-align: center;
+    }
+
+    .boldname {
+      font-weight: 700;
+    }
+    .lightcol {
+      color: #88867f;
+    }
+  </style>
+  <body>
+    <div>
+      <h1>
+        <div class="title">
+          🌤 <br />
+          Currently 21 °C in Amsterdam
+        </div>
+        <span>13° / <strong> 23° </strong></span>
+      </h1>
+    </div>
+    <ul>
+      <li>
+        <div class="boldname">🌧 Tomorrow</div>
+        <div class="lightcol">
+          <span>10° / <strong> 23° </strong></span>
+        </div>
+      </li>
+      <li>
+        <div class="boldname">🌥 Saturday</div>
+        <div class="lightcol">
+          <span>15° / <strong> 17° </strong></span>
+        </div>
+      </li>
+      <li>
+        <div class="boldname">☀️ Sunday</div>
+        <div class="lightcol">
+          <span>25° / <strong> 28° </strong></span>
+        </div>
+      </li>
+    </ul>
+    <div>
+      <button>Change City!</button>
+    </div>
+    <script>
+      function cityInfo(newCity, newDegree) {
+        let title = document.querySelector(".title");
+        let city = prompt("Enter Your City: ");
+        let cdegree = prompt("Enter Degree: ");
+        if (cdegree <= 0) {
+          title.innerHTML = "🥶 <br /> Currently " + cdegree + "°C in " + city;
+        } else {
+          title.innerHTML = "😄 <br /> Currently " + cdegree + "°C in " + city;
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", cityInfo);
+    </script>
+  </body>
+</html>
+<br /><br />
+<p class="lightcol">Coded by Royyy</p>
