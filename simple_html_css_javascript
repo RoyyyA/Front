@@ -1,0 +1,136 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=
+    , initial-scale=1.0" />
+    <title>Milk Shake</title>
+  </head>
+  <style>
+    h1 {
+      color: #9896f1;
+    }
+    h2 {
+      color: #d59bf6;
+    }
+    img {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 5px;
+      width: 300px;
+    }
+
+    img:hover {
+      box-shadow: 0 0 2px 1px rgba(145, 71, 187, 0.301);
+    }
+    .whole {
+      text-align: center;
+      display: block;
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    explanation {
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+    button {
+      color: white;
+      font-size: large;
+      background-color: #4e4188;
+      display: block;
+      padding: 10px 20px 10px 20px;
+      margin: 0 auto;
+      transition: all 200ms ease-in-out;
+      border: 1px solid #a393eb;
+      border-radius: 40px;
+      box-shadow: 7px 5px 5px #a393eb;
+      font-family: fantasy;
+      opacity: 10;
+      box-shadow: inset;
+    }
+    button:hover {
+      color: #4e4188;
+      background-color: #f5c7f7;
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      color: #4e4188;
+      font-size: 16px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .firstimage {
+      border: 2px;
+      border-radius: 5px;
+      padding: 30px;
+      margin-top: 10px;
+    }
+    .secimage {
+      border: 2px;
+      border-radius: 20px;
+      padding: 30px;
+      margin-top: 10px;
+    }
+  </style>
+  <body>
+    <div class="whole">
+      <h1>Milk Shakes! 💖</h1>
+      <h2>One Of the best Beverages EVER!</h2>
+
+      <br />
+      <img
+        class="firstimage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/437/original/index.jpg?1669536728"
+        alt="3milkshakes" />
+      <div class="explanation">
+        <p>
+          A milkshake (sometimes simply called a shake) is a sweet beverage made
+          by blending milk, ice cream, and flavorings or sweeteners such as
+          butterscotch, caramel sauce, chocolate syrup, fruit syrup, or whole
+          fruit into a thick, sweet, cold mixture. It may also be made using a
+          base made from non-dairy products, including plant milks such as
+          almond milk, coconut milk, or soy milk. Milkshakes originated in the
+          United States around the turn of the 20th century, and grew in
+          popularity following the introduction of electric blenders in the
+          subsequent two decades. They became a common part of youth popular
+          culture, as ice cream shops were a culturally acceptable meeting place
+          for youth, and milkshakes became symbolic of the innocence of youth.
+        </p>
+      </div>
+
+      <a
+        href="https://en.wikipedia.org/wiki/Milkshake"
+        target="_blank"
+        class="wikiref"
+        >Read More on Wikipedia</a
+      >
+
+      <br /><br />
+      <button>GET IN TOUCH</button>
+      <br />
+      <img
+        class="secimage"
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/436/original/images2.jpg?1669536637"
+        alt="fivemilkshakes" />
+    </div>
+    <script>
+      function userInfo() {
+        let name = prompt("Enter your Name: ");
+        let email = prompt("ENter your Email: ");
+
+        alert("We'll be in touch dear " + name + "with this email: " + email);
+      }
+      let newButton = document.querySelector("button");
+      newButton.addEventListener("click", userInfo);
+    </script>
+  </body>
+</html>
